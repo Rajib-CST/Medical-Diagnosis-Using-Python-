@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medical Diagnosis Expert System</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Medical Diagnosis Expert System</h1>
+      <p class="disclaimer">
+        Educational demo only &mdash; not a real medical diagnosis tool. Seek advice from a qualified healthcare
+        professional for real symptoms.
+      </p>
+    </header>
+
+    <form id="symptom-form" class="card">
+      <div id="symptom-grid" class="symptom-grid"></div>
+      <button type="submit">Assess symptoms</button>
+    </form>
+
+    <section id="result" class="card result" hidden></section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

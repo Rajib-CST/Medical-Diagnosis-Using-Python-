@@ -1,0 +1,72 @@
+{
+  "Jaundice": {
+    "profile": ["no", "no", "no", "no", "no", "no", "high", "no", "no", "no", "low", "yes", "no"],
+    "description": "Jaundice is a yellowing of the skin and eyes caused by a buildup of bilirubin, often linked to liver, gallbladder, or blood disorders.",
+    "treatment": "Treatment targets the underlying cause and may include fluids, dietary changes, or medication; a doctor should evaluate liver and bile function."
+  },
+  "Alzheimers": {
+    "profile": ["no", "no", "no", "no", "no", "no", "low", "no", "no", "yes", "no", "no", "low"],
+    "description": "Alzheimer's disease is a progressive neurological disorder causing memory loss, confusion, and behavioral changes.",
+    "treatment": "There is no cure; care focuses on medications that ease symptoms, structured routines, and support from caregivers and specialists."
+  },
+  "Arthritis": {
+    "profile": ["no", "high", "no", "no", "no", "no", "low", "no", "no", "no", "no", "no", "no"],
+    "description": "Arthritis is inflammation of one or more joints, causing pain and stiffness that often worsens with age.",
+    "treatment": "Management includes anti-inflammatory medication, physical therapy, gentle exercise, and weight management."
+  },
+  "Tuberculosis": {
+    "profile": ["no", "no", "low", "high", "no", "no", "high", "no", "no", "no", "high", "no", "no"],
+    "description": "Tuberculosis is a bacterial infection that primarily affects the lungs, spreading through airborne droplets.",
+    "treatment": "Treatment requires a several-month course of prescribed antibiotics under medical supervision to fully clear the infection."
+  },
+  "Asthma": {
+    "profile": ["no", "no", "high", "yes", "no", "no", "low", "no", "no", "yes", "no", "no", "no"],
+    "description": "Asthma is a chronic condition in which airways narrow and swell, making breathing difficult and often triggering coughing or wheezing.",
+    "treatment": "Inhaled bronchodilators and anti-inflammatory medication help control symptoms; avoiding known triggers reduces flare-ups."
+  },
+  "Sinusitis": {
+    "profile": ["high", "no", "no", "yes", "no", "yes", "low", "no", "no", "no", "low", "no", "no"],
+    "description": "Sinusitis is inflammation of the sinus cavities, often following a cold, causing facial pressure and congestion.",
+    "treatment": "Saline rinses, decongestants, and rest usually help; bacterial cases may need antibiotics if symptoms persist."
+  },
+  "Epilepsy": {
+    "profile": ["low", "no", "no", "no", "yes", "no", "high", "no", "no", "yes", "no", "no", "high"],
+    "description": "Epilepsy is a neurological disorder marked by recurrent seizures caused by abnormal electrical activity in the brain.",
+    "treatment": "Anti-seizure medication prescribed by a neurologist is the primary treatment, alongside lifestyle adjustments to reduce triggers."
+  },
+  "Heart Disease": {
+    "profile": ["no", "no", "high", "no", "yes", "no", "high", "no", "no", "no", "no", "yes", "no"],
+    "description": "Heart disease covers a range of conditions affecting the heart, including narrowed arteries that can lead to chest pain or heart attack.",
+    "treatment": "Treatment may include lifestyle changes, medication to manage blood pressure and cholesterol, and in some cases surgery."
+  },
+  "Diabetes": {
+    "profile": ["no", "no", "no", "no", "no", "no", "high", "no", "no", "no", "no", "no", "high"],
+    "description": "Diabetes is a metabolic condition where the body cannot properly regulate blood sugar levels.",
+    "treatment": "Management involves monitoring blood sugar, dietary changes, and medication such as insulin or oral drugs as prescribed."
+  },
+  "Glaucoma": {
+    "profile": ["high", "no", "no", "no", "no", "no", "no", "no", "no", "no", "no", "yes", "high"],
+    "description": "Glaucoma is a group of eye conditions that damage the optic nerve, often linked to elevated eye pressure.",
+    "treatment": "Prescription eye drops, laser therapy, or surgery can lower eye pressure and help prevent vision loss."
+  },
+  "Hyperthyroidism": {
+    "profile": ["no", "no", "no", "no", "no", "no", "low", "yes", "no", "yes", "low", "no", "no"],
+    "description": "Hyperthyroidism occurs when the thyroid gland produces excess hormone, speeding up the body's metabolism.",
+    "treatment": "Treatment options include anti-thyroid medication, beta-blockers for symptom relief, radioactive iodine, or surgery."
+  },
+  "Heat Stroke": {
+    "profile": ["high", "no", "no", "no", "yes", "no", "high", "yes", "no", "yes", "high", "yes", "no"],
+    "description": "Heat stroke is a severe heat-related illness where the body's core temperature rises dangerously high, impairing normal function.",
+    "treatment": "This is a medical emergency requiring immediate cooling and fluids; seek emergency care right away."
+  },
+  "Hypothermia": {
+    "profile": ["no", "no", "no", "no", "no", "no", "high", "no", "high", "yes", "no", "no", "no"],
+    "description": "Hypothermia occurs when the body loses heat faster than it can produce it, causing dangerously low body temperature.",
+    "treatment": "Gradual rewarming, dry insulation, and warm fluids are needed; severe cases require emergency medical care."
+  },
+  "Coronavirus": {
+    "profile": ["low", "no", "no", "yes", "no", "yes", "high", "no", "no", "no", "high", "no", "no"],
+    "description": "Coronavirus (COVID-19) is a viral respiratory infection that spreads through respiratory droplets and can range from mild to severe.",
+    "treatment": "Rest, fluids, and symptom management are typical for mild cases; seek medical care if breathing difficulty or high fever persists."
+  }
+}

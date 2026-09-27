@@ -1,9 +1,11 @@
+import json
 from pathlib import Path
 
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, request, send_from_directory
 
 
 BASE_DIR = Path(__file__).resolve().parent
+PUBLIC_DIR = BASE_DIR / "public"
 SYMPTOMS = [
     ("headache", "Headache"),
     ("back_pain", "Back pain"),
@@ -23,20 +25,7 @@ LEVELS = {"no", "low", "high", "yes"}
 
 
 def load_knowledge():
-    diseases = [
-        item.strip()
-        for item in (BASE_DIR / "diseases.txt").read_text(encoding="utf-8").splitlines()
-        if item.strip()
-    ]
-    knowledge = {}
-    for disease in diseases:
-        symptom_path = BASE_DIR / "Disease symptoms" / f"{disease}.txt"
-        knowledge[disease] = {
-            "profile": [line.strip().lower() for line in symptom_path.read_text(encoding="utf-8").splitlines()],
-            "description": (BASE_DIR / "Disease descriptions" / f"{disease}.txt").read_text(encoding="utf-8").strip(),
-            "treatment": (BASE_DIR / "Disease treatments" / f"{disease}.txt").read_text(encoding="utf-8").strip(),
-        }
-    return knowledge
+    return json.loads((BASE_DIR / "data" / "knowledge.json").read_text(encoding="utf-8"))
 
 
 KNOWLEDGE = load_knowledge()
@@ -71,7 +60,12 @@ def rank_diseases(answers):
 
 @app.get("/")
 def index():
-    return render_template("index.html", symptoms=SYMPTOMS)
+    return send_from_directory(PUBLIC_DIR, "index.html")
+
+
+@app.get("/<path:filename>")
+def static_asset(filename):
+    return send_from_directory(PUBLIC_DIR, filename)
 
 
 @app.post("/api/diagnose")
